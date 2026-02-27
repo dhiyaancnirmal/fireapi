@@ -36,11 +36,10 @@ export async function registerDashboardStatic(
   await app.register(fastifyStatic, {
     root,
     prefix: `${basePath}/`,
-    decorateReply: false,
+    wildcard: false,
   });
 
   app.get(basePath, async (_request, reply) => reply.sendFile('index.html'));
-  app.get(`${basePath}/`, async (_request, reply) => reply.sendFile('index.html'));
 
   app.get(`${basePath}/*`, async (request, reply) => {
     const wildcard = (request.params as { '*': string })['*'];
