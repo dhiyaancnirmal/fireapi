@@ -1,0 +1,31 @@
+{
+  "name": "@fireapi/browser",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check src tests examples",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@mendable/firecrawl-js": "^4.13.0",
+    "fast-json-stable-stringify": "^2.1.0",
+    "pino": "^9.6.0",
+    "playwright-core": "^1.58.2",
+    "ulid": "^2.3.0"
+  }
+}

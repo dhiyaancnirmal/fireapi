@@ -1,0 +1,66 @@
+{
+  "version": 2,
+  "id": "wf-basic-search",
+  "name": "Basic Search",
+  "sourceUrl": "https://example.com/search",
+  "steps": [
+    {
+      "id": "navigate-1",
+      "type": "navigate",
+      "config": { "type": "navigate", "url": "https://example.com/search" },
+      "selectors": [],
+      "timeout": 10000,
+      "retries": 0,
+      "onFailure": "abort"
+    },
+    {
+      "id": "fill-1",
+      "type": "fill",
+      "config": { "type": "fill", "parameterRef": "query" },
+      "selectors": [{ "type": "css", "value": "#query", "confidence": 0.95 }],
+      "timeout": 10000,
+      "retries": 0,
+      "onFailure": "abort"
+    },
+    {
+      "id": "click-1",
+      "type": "click",
+      "config": { "type": "click" },
+      "selectors": [{ "type": "css", "value": "button[type=submit]", "confidence": 0.95 }],
+      "timeout": 10000,
+      "retries": 0,
+      "onFailure": "abort"
+    },
+    {
+      "id": "extract-1",
+      "type": "extract",
+      "config": { "type": "extract", "target": "results", "extractionType": "table" },
+      "selectors": [{ "type": "css", "value": "table.results", "confidence": 0.9 }],
+      "timeout": 10000,
+      "retries": 0,
+      "onFailure": "abort"
+    }
+  ],
+  "edges": [
+    { "from": "navigate-1", "to": "fill-1" },
+    { "from": "fill-1", "to": "click-1" },
+    { "from": "click-1", "to": "extract-1" }
+  ],
+  "inputParameters": [
+    {
+      "name": "query",
+      "type": "string",
+      "required": true,
+      "description": "Search query",
+      "linkedStepId": "fill-1"
+    }
+  ],
+  "extractionTargets": [
+    {
+      "name": "results",
+      "type": "table",
+      "schema": { "type": "object" },
+      "linkedStepId": "extract-1"
+    }
+  ]
+}

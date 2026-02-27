@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dynamic Content Fixture</title>
+  </head>
+  <body>
+    <div id="app">Loading…</div>
+    <script>
+      setTimeout(() => {
+        document.getElementById('app').innerHTML = `
+          <form id="dynamic-form">
+            <label for="query">Query</label>
+            <input id="query" name="query" type="search" />
+            <button id="run" type="button">Run Search</button>
+          </form>
+        `;
+      }, 10);
+    </script>
+  </body>
+</html>

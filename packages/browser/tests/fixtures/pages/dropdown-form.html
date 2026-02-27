@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dropdown Dependency Fixture</title>
+  </head>
+  <body>
+    <form id="address-form" name="addressForm">
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="us">United States</option>
+        <option value="ca">Canada</option>
+      </select>
+
+      <label for="state">State/Province</label>
+      <select id="state" name="state"></select>
+
+      <button id="submit-address" type="button">Submit</button>
+    </form>
+
+    <script>
+      const stateOptions = {
+        us: [
+          { value: 'tx', label: 'Texas' },
+          { value: 'ca', label: 'California' },
+          { value: 'ny', label: 'New York' }
+        ],
+        ca: [
+          { value: 'on', label: 'Ontario' },
+          { value: 'bc', label: 'British Columbia' }
+        ]
+      };
+
+      const country = document.getElementById('country');
+      const state = document.getElementById('state');
+
+      function renderStates() {
+        const selected = country.value;
+        state.innerHTML = '';
+        for (const option of stateOptions[selected]) {
+          const el = document.createElement('option');
+          el.value = option.value;
+          el.textContent = option.label;
+          state.appendChild(el);
+        }
+      }
+
+      country.addEventListener('change', renderStates);
+      renderStates();
+    </script>
+  </body>
+</html>

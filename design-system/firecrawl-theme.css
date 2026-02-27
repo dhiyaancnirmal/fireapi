@@ -1,0 +1,87 @@
+:root {
+  --fc-color-primary: #ff4c00;
+  --fc-color-accent: #ff4c00;
+  --fc-color-bg: #f9f9f9;
+  --fc-color-surface: #ffffff;
+  --fc-color-surface-muted: #efefef;
+  --fc-color-text: #262626;
+  --fc-color-link: #ff4d00;
+
+  --fc-font-heading: 'Suisse', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --fc-font-body: 'Suisse', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  --fc-size-h1: 60px;
+  --fc-size-h2: 52px;
+  --fc-size-body: 16px;
+
+  --fc-space-unit: 4px;
+  --fc-radius-sm: 5px;
+  --fc-radius-md: 10px;
+
+  --fc-shadow-button-primary: color(display-p3 0.9804 0.1127 0.098 / 0.2) 0px -6px 12px 0px inset,
+    color(display-p3 0.9804 0.3647 0.098 / 0.12) 0px 2px 4px 0px,
+    color(display-p3 0.9804 0.3647 0.098 / 0.12) 0px 1px 1px 0px,
+    color(display-p3 0.9804 0.3647 0.098 / 0.16) 0px 0.5px 0.5px 0px,
+    color(display-p3 0.9804 0.3647 0.098 / 0.2) 0px 0.25px 0.25px 0px;
+}
+
+.fc-theme {
+  color: var(--fc-color-text);
+  background: var(--fc-color-bg);
+  font-family: var(--fc-font-body);
+  font-size: var(--fc-size-body);
+}
+
+.fc-theme h1,
+.fc-theme .fc-h1 {
+  font-family: var(--fc-font-heading);
+  font-size: clamp(2rem, 6vw, var(--fc-size-h1));
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+}
+
+.fc-theme h2,
+.fc-theme .fc-h2 {
+  font-family: var(--fc-font-heading);
+  font-size: clamp(1.75rem, 5vw, var(--fc-size-h2));
+  line-height: 1.06;
+  letter-spacing: -0.01em;
+}
+
+.fc-btn-primary {
+  border: 0;
+  border-radius: var(--fc-radius-md);
+  background: var(--fc-color-primary);
+  color: #fff;
+  box-shadow: var(--fc-shadow-button-primary);
+  padding: calc(var(--fc-space-unit) * 3) calc(var(--fc-space-unit) * 5);
+  font-family: var(--fc-font-body);
+  font-weight: 600;
+}
+
+.fc-btn-secondary {
+  border: 0;
+  border-radius: var(--fc-radius-md);
+  background: var(--fc-color-surface-muted);
+  color: var(--fc-color-text);
+  padding: calc(var(--fc-space-unit) * 3) calc(var(--fc-space-unit) * 5);
+  font-family: var(--fc-font-body);
+  font-weight: 600;
+}
+
+.fc-input {
+  border: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--fc-color-text) 20%, transparent);
+  border-radius: 0;
+  background: transparent;
+  color: var(--fc-color-text);
+  padding: calc(var(--fc-space-unit) * 2) 0;
+  font-family: var(--fc-font-body);
+}
+
+.fc-link {
+  color: var(--fc-color-link);
+  text-decoration-color: color-mix(in srgb, var(--fc-color-link) 35%, transparent);
+}

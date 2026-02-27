@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simple Search Fixture</title>
+    <style>
+      #results { display: none; }
+      #results.visible { display: table; }
+    </style>
+  </head>
+  <body>
+    <form id="search-form" name="searchForm">
+      <label for="owner">Owner Name</label>
+      <input id="owner" name="owner" type="text" placeholder="Owner name" />
+
+      <label for="county">County</label>
+      <select id="county" name="county" aria-label="County">
+        <option value="harris">Harris</option>
+        <option value="dallas">Dallas</option>
+        <option value="travis">Travis</option>
+      </select>
+
+      <button id="search-btn" type="button">Search</button>
+    </form>
+
+    <table id="results">
+      <thead>
+        <tr>
+          <th>Parcel ID</th>
+          <th>Owner</th>
+          <th>Assessed Value</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script>
+      const rows = [
+        ['1001', 'SMITH, JOHN', '285000'],
+        ['1002', 'DOE, JANE', '315000']
+      ];
+      document.getElementById('search-btn').addEventListener('click', () => {
+        const tbody = document.querySelector('#results tbody');
+        tbody.innerHTML = '';
+        for (const row of rows) {
+          const tr = document.createElement('tr');
+          for (const cell of row) {
+            const td = document.createElement('td');
+            td.textContent = cell;
+            tr.appendChild(td);
+          }
+          tbody.appendChild(tr);
+        }
+        document.getElementById('results').classList.add('visible');
+      });
+    </script>
+  </body>
+</html>

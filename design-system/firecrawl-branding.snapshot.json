@@ -1,0 +1,161 @@
+{
+  "sourceUrl": "https://www.firecrawl.dev/",
+  "scrapedAt": "019c9c6a-e680-7432-99d5-91ecbccc611b",
+  "branding": {
+    "colorScheme": "light",
+    "fonts": [
+      {
+        "family": "Suisse",
+        "role": "body"
+      }
+    ],
+    "colors": {
+      "primary": "#FF4C00",
+      "accent": "#FF4C00",
+      "background": "#F9F9F9",
+      "textPrimary": "#262626",
+      "link": "#FF4D00"
+    },
+    "typography": {
+      "fontFamilies": {
+        "primary": "Suisse",
+        "heading": "Suisse"
+      },
+      "fontStacks": {
+        "heading": [
+          "Suisse",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI Symbol",
+          "Noto Color Emoji"
+        ],
+        "body": [
+          "Suisse",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI Symbol",
+          "Noto Color Emoji"
+        ],
+        "paragraph": [
+          "Suisse",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI Symbol",
+          "Noto Color Emoji"
+        ]
+      },
+      "fontSizes": {
+        "h1": "60px",
+        "h2": "52px",
+        "body": "16px"
+      }
+    },
+    "spacing": {
+      "baseUnit": 4,
+      "borderRadius": "5px"
+    },
+    "components": {
+      "input": {
+        "background": "transparent",
+        "textColor": "#262626",
+        "borderColor": null,
+        "borderRadius": "0px",
+        "borderRadiusCorners": {
+          "topLeft": "0px",
+          "topRight": "0px",
+          "bottomRight": "0px",
+          "bottomLeft": "0px"
+        },
+        "shadow": "none"
+      },
+      "buttonPrimary": {
+        "background": "#FF4C00",
+        "textColor": "#FFFFFF",
+        "borderRadius": "10px",
+        "borderRadiusCorners": {
+          "topLeft": "10px",
+          "topRight": "10px",
+          "bottomRight": "10px",
+          "bottomLeft": "10px"
+        },
+        "shadow": "color(display-p3 0.9804 0.1127 0.098 / 0.2) 0px -6px 12px 0px inset, color(display-p3 0.9804 0.3647 0.098 / 0.12) 0px 2px 4px 0px, color(display-p3 0.9804 0.3647 0.098 / 0.12) 0px 1px 1px 0px, color(display-p3 0.9804 0.3647 0.098 / 0.16) 0px 0.5px 0.5px 0px, color(display-p3 0.9804 0.3647 0.098 / 0.2) 0px 0.25px 0.25px 0px"
+      },
+      "buttonSecondary": {
+        "background": "#EFEFEF",
+        "textColor": "#262626",
+        "borderRadius": "10px",
+        "borderRadiusCorners": {
+          "topLeft": "10px",
+          "topRight": "10px",
+          "bottomRight": "10px",
+          "bottomLeft": "10px"
+        },
+        "shadow": "none"
+      }
+    },
+    "images": {
+      "logo": "data:image/svg+xml;utf8,%3Csvg%20fill%3D%22none%22%20height%3D%2215%22%20viewBox%3D%220%200%2079%2015%22%20width%3D%2279%22%20class%3D%22text-accent-black%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-fc-idx%3D%220%22%3E%3Cpath%20d%3D%22M0.599609%2014.4311V0.576888H9.45474V2.59564H2.87778V6.61335H8.30575V8.57272H2.87778V14.4311H0.599609Z%22%20fill%3D%22currentColor%22%20style%3D%22fill%3A%20color(display-p3%200.14902%200.14902%200.14902)%20!important%3B%22%2F%3E%3Cpath%20d%3D%22M11.9737%202.87272C11.2407%202.87272%2010.6663%202.33835%2010.6663%201.58626C10.6663%200.83418%2011.2407%200.299805%2011.9737%200.299805C12.7067%200.299805%2013.2812%200.83418%2013.2812%201.58626C13.2812%202.33835%2012.7067%202.87272%2011.9737%202.87272ZM10.8842%2014.4311V4.29772H13.0237V14.4311H10.8842Z%22%20fill%3D%22currentColor%22%20style%3D%22fill%3A%20color(display-p3%200.14902%200.14902%200.14902)%20!important%3B%22%2F%3E%3Cpath%20d%3D%22M20.1527%204.29772H20.6281V6.29668H19.6772C17.7755%206.29668%2017.1613%207.78105%2017.1613%209.3446V14.4311H15.0219V4.29772H16.9236L17.1613%205.82168C17.6764%204.97064%2018.4886%204.29772%2020.1527%204.29772Z%22%20fill%3D%22currentColor%22%20style%3D%22fill%3A%20color(display-p3%200.14902%200.14902%200.14902)%20!important%3B%22%2F%3E%3Cpath%20d%3D%22M26.1788%2014.5498C22.9894%2014.5498%2020.9886%2012.4915%2020.9886%209.38418C20.9886%206.2571%2022.9894%204.17897%2025.9807%204.17897C28.9126%204.17897%2030.8738%206.03939%2030.9333%209.00814C30.9333%209.26543%2030.9135%209.54251%2030.8738%209.8196H23.2271V9.95814C23.2865%2011.68%2024.3761%2012.8081%2026.06%2012.8081C27.3674%2012.8081%2028.3183%2012.155%2028.6155%2011.0269H30.755C30.3984%2013.0258%2028.6947%2014.5498%2026.1788%2014.5498ZM23.3064%208.25605H28.7145C28.5362%206.75189%2027.4863%205.90085%2026.0005%205.90085C24.6336%205.90085%2023.4648%206.81126%2023.3064%208.25605Z%22%20fill%3D%22currentColor%22%20style%3D%22fill%3A%20color(display-p3%200.14902%200.14902%200.14902)%20!important%3B%22%2F%3E%3Cpath%20d%3D%22M37.2193%2014.5498C34.1487%2014.5498%2032.1875%2012.5508%2032.1875%209.38418C32.1875%206.2571%2034.2081%204.17897%2037.2787%204.17897C39.8936%204.17897%2041.5181%205.62376%2041.9341%207.9196H39.6955C39.4182%206.7321%2038.5664%205.9998%2037.2391%205.9998C35.5156%205.9998%2034.3864%207.38522%2034.3864%209.38418C34.3864%2011.3633%2035.5156%2012.729%2037.2391%2012.729C38.5465%2012.729%2039.4182%2011.9769%2039.6757%2010.8092H41.9341C41.5379%2013.105%2039.8144%2014.5498%2037.2193%2014.5498Z%22%20fill%3D%22currentColor%22%20style%3D%22fill%3A%20color(display-p3%200.14902%200.14902%200.14902)%20!important%3B%22%2F%3E%3Cpath%20d%3D%22M48.6034%204.29772H49.0789V6.29668H48.128C46.2262%206.29668%2045.6121%207.78105%2045.6121%209.3446V14.4311H43.4726V4.29772H45.3744L45.6121%205.82168C46.1272%204.97064%2046.9394%204.29772%2048.6034%204.29772Z%22%20fill%3D%22currentColor%22%20style%3D%22fill%3A%20color(display-p3%200.14902%200.14902%200.14902)%20!important%3B%22%2F%3E%3Cpath%20d%3D%22M54.3679%204.17897C57.0621%204.17897%2058.6073%205.46543%2058.6073%207.86022V14.4311H56.7451L56.5668%2012.9863C55.8735%2013.8967%2054.9028%2014.5498%2053.2981%2014.5498C51.0794%2014.5498%2049.5936%2013.4613%2049.5936%2011.5811C49.5936%209.50293%2051.0992%208.33522%2053.9519%208.33522H56.4876V7.72168C56.4876%206.59355%2055.6754%205.90085%2054.2688%205.90085C53.001%205.90085%2052.1491%206.4946%2051.9907%207.38522H49.8908C50.1087%205.40605%2051.8124%204.17897%2054.3679%204.17897ZM53.6547%2012.8873C55.4376%2012.8873%2056.4678%2011.8383%2056.4876%2010.2748V9.91855H53.833C52.5057%209.91855%2051.7728%2010.4133%2051.7728%2011.4425C51.7728%2012.2936%2052.4859%2012.8873%2053.6547%2012.8873Z%22%20fill%3D%22currentColor%22%20style%3D%22fill%3A%20color(display-p3%200.14902%200.14902%200.14902)%20!important%3B%22%2F%3E%3Cpath%20d%3D%22M62.7912%2014.4311L59.4829%204.29772H61.7413L64.0591%2012.0561L66.3768%204.29772H68.3381L70.5568%2012.0561L72.9538%204.29772H75.1329L71.7652%2014.4311H69.4672L67.3277%207.54355L65.109%2014.4311H62.7912Z%22%20fill%3D%22currentColor%22%20style%3D%22fill%3A%20color(display-p3%200.14902%200.14902%200.14902)%20!important%3B%22%2F%3E%3Cpath%20d%3D%22M76.1601%2014.4311V0.576888H78.2996V14.4311H76.1601Z%22%20fill%3D%22currentColor%22%20style%3D%22fill%3A%20color(display-p3%200.14902%200.14902%200.14902)%20!important%3B%22%2F%3E%3C%2Fsvg%3E",
+      "favicon": "https://www.firecrawl.dev/favicon.png",
+      "ogImage": "https://www.firecrawl.dev/og.png",
+      "logoHref": "/"
+    },
+    "__llm_logo_reasoning": {
+      "selectedIndex": 3,
+      "reasoning": "Selected #1 because it is visible, links to the homepage, and is located in a prominent position, matching the brand 'Firecrawl'.",
+      "confidence": 0.85,
+      "source": "llm"
+    },
+    "__llm_button_reasoning": {
+      "primary": {
+        "index": 7,
+        "text": "Start for free",
+        "reasoning": "Button #5 'Start for free' uses the brand's vibrant color #FF4C00, indicating a strong call-to-action for new users to engage with the service."
+      },
+      "secondary": {
+        "index": 4,
+        "text": "Get started",
+        "reasoning": "Button #0 'Get started' has a light background color #EFEFEF, making it a suitable secondary action that complements the primary button without competing visually."
+      },
+      "confidence": 0.95
+    },
+    "personality": {
+      "tone": "modern",
+      "energy": "high",
+      "targetAudience": "developers and AI enthusiasts"
+    },
+    "designSystem": {
+      "framework": "tailwind",
+      "componentLibrary": ""
+    },
+    "confidence": {
+      "buttons": 0.95,
+      "colors": 0.9,
+      "overall": 0.925
+    },
+    "__llm_metadata": {
+      "logoSelection": {
+        "llmCalled": true,
+        "llmSucceeded": true,
+        "finalSource": "llm",
+        "rawLogoSelection": {
+          "selectedLogoIndex": 1,
+          "selectedLogoReasoning": "Selected #1 because it is visible, links to the homepage, and is located in a prominent position, matching the brand 'Firecrawl'.",
+          "confidence": 0.85
+        }
+      },
+      "buttonClassification": {
+        "llmCalled": true,
+        "llmSucceeded": true
+      }
+    }
+  }
+}

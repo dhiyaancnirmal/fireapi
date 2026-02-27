@@ -1,0 +1,60 @@
+{
+  "url": "https://example.com/search",
+  "timestamp": "2026-02-26T00:00:00.000Z",
+  "elements": [
+    {
+      "id": "el-query",
+      "type": "search",
+      "tagName": "input",
+      "inputType": "search",
+      "name": "query",
+      "label": "Query",
+      "placeholder": "Search",
+      "ariaLabel": "Search query",
+      "selectors": [
+        { "type": "css", "value": "#query", "confidence": 0.98 },
+        { "type": "aria", "value": "aria=Query", "confidence": 0.81 }
+      ],
+      "required": true,
+      "formId": "search-form",
+      "textContent": null,
+      "attributes": { "id": "query", "name": "query", "type": "search" }
+    },
+    {
+      "id": "el-submit",
+      "type": "submit",
+      "tagName": "button",
+      "name": null,
+      "label": "Search",
+      "placeholder": null,
+      "ariaLabel": null,
+      "selectors": [{ "type": "css", "value": "button[type=submit]", "confidence": 0.95 }],
+      "required": false,
+      "formId": "search-form",
+      "textContent": "Search",
+      "attributes": { "type": "submit" }
+    }
+  ],
+  "tables": [
+    {
+      "selectors": [{ "type": "css", "value": "table.results", "confidence": 0.9 }],
+      "headers": ["Name", "Age"],
+      "columnTypes": ["string", "number"],
+      "sampleRows": [{ "Name": "Alice", "Age": "31" }, { "Name": "Bob", "Age": "28" }],
+      "rowCount": 2,
+      "hasPagination": false
+    }
+  ],
+  "forms": [
+    {
+      "id": "search-form",
+      "name": "search",
+      "action": "/search",
+      "method": "get",
+      "selectors": [{ "type": "css", "value": "#search-form", "confidence": 0.99 }],
+      "elementIds": ["el-query", "el-submit"]
+    }
+  ],
+  "paginationControls": [],
+  "dependencies": []
+}
